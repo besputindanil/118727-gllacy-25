@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Данил Беспутин](https://up.htmlacademy.ru/htmlcss/25/user/118727).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович](https://htmlacademy.ru/profile/balabanovich).
 
 ---
 
