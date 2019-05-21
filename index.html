@@ -16,7 +16,9 @@
           <li><a href="about.html">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">Вход</li>
+          <li>
+            <a class="login-link" href="login.html">Вход</a>
+          </li>
         </ul>
         <span class="cart">Пусто</span>
       </nav>
@@ -47,7 +49,12 @@
       </article>
       <section class="subscription">
         <p class="subscription-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <!--Здесь будет форма-->
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="subscription-email">Электронная почта<label>
+          <input type="text" id="subscription-email" name="email" placeholder="Электронная почта">
+          <button type="submit">Отправить</button>
+        </form>
+
       </section>
     </main>
     <footer class="main-footer">
