@@ -15,10 +15,7 @@
           <li><a href="delivery.html">Доставка и оплата</a></li>
           <li><a href="about.html">О компании</a></li>
         </ul>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="search">Поиск</label>
-          <input type="search" id="search" name="search" placeholder="Что ищем?">
-        </form>
+
         <ul class="user-navigation">
           <li>
             <a class="login-link" href="login.html">Вход</a>
@@ -58,7 +55,6 @@
           <input type="text" id="subscription-email" name="email" placeholder="Электронная почта">
           <button type="submit">Отправить</button>
         </form>
-
       </section>
     </main>
     <footer class="main-footer">
@@ -83,5 +79,43 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </div>
     </footer>
+
+    <section class="modal modal-menu">
+      <h2 class="visually-hidden">Главное меню</h2>
+      <form class="menu-form" action="https://echo.htmlacademy.ru" method="post">
+        <select class="menu" name="menu">
+          <option>Новинки</option>
+          <option>Сливочное</option>
+          <option>Щербеты</option>
+          <option>Фруктовый лед</option>
+          <option>Мелорин</option>
+        </select>
+      </form>
+    </section>
+    <section class="modal modal-search">
+      <h2 class="visually-hidden">Поиск</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="search">Поиск</label>
+        <input type="search" id="search" name="search" placeholder="Что ищем?">
+      </form>
+    </section>
+     <section class="modal modal-login">
+       <h2 class="visually-hidden">Личный кабинет</h2>
+       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+         <p>
+           <label class="visually-hidden" for="user-email">Элетронная почта</label>
+           <input class="login-icon-user" type="text" id="user-email" name="email" placeholder="Электронная почта">
+         </p>
+         <p>
+           <label class="visually-hidden" for="user-password">Пароль</label>
+           <input class="login-icon-password" type="password" id="user-password" name="password" placeholder="Пароль">
+         </p>
+         <p class="login-info">
+           <button class="button" type="submit">Войти</button>
+           <a class="forget" href="#">Забыли пароль</a>
+           <a class="registration" href="#">Новая регистрация</a>
+         </p>
+       </form>
+     </section>
   </body>
 </html>
