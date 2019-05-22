@@ -99,7 +99,7 @@
         <input type="search" id="search" name="search" placeholder="Что ищем?">
       </form>
     </section>
-     <section class="modal modal-login">
+    <section class="modal modal-login">
        <h2 class="visually-hidden">Личный кабинет</h2>
        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
          <p>
@@ -116,6 +116,25 @@
            <a class="registration" href="#">Новая регистрация</a>
          </p>
        </form>
+    </section>
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback-info">Мы обязательно вам ответим!</p>
+        <p>
+          <label class="visually-hidden" for="feedback-name">Имя</label>
+          <input type="text" id="feedback-name" name="name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-email">Электронная почта</label>
+          <input type="text" id="feedback-email" name="email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-question">Ваш вопрос</label>
+          <textarea id="feedback-question" name="question" rows="6">Напишите что-нибудь?</textarea>
+        </p>
+        <button  class="button "type="submit">Отправить</button>
+      </form>
      </section>
   </body>
 </html>
