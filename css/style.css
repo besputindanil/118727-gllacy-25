@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fefefe;
+
+  text-align:center;
+  vertical-align: middle;
+
+  background-color: #f16542;
+  border: none;
+}
+
+.site-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+    }
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+
+.site-navigation a:active {
+  color: #323232;
+
+  background-color: #ededed;
+}
+
+.features {
+  background-image: url("img/wafer.jpg");
+  background-color: #eadbbc;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.main-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.feature-item {
+  color: #323232;
+}
+
+.article {
+  background-image: url("img/strawberry.jpg");
+  background-color: #ffffff;
+}
+
+.article h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.article-info a  {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #323232;
+
+  text-decoration: underline;
+  }
+
+.article-info a:hover,
+.article-info a:focus,
+.article-info a:active {
+  color: #e84d37;
+}
+
+.subscription {
+  background-color: #f8f7f4;
+}
+
+.subscription-info {
+  color: #5a5a5a;
+}
+
+.subscription-form input[type="text"] {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+}
+
+.subscription-form input:hover {
+  border: 2px solid #c7c6c5;
+}
+
+.subscription-form input:focus {
+  font-weight: 700;
+  color: #323232;
+
+  border: 2px solid #8fbdec;
+  outline: none;
+}
+
+.main-footer {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.main-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+ .social-list,
+ .info-list {
+   list-style: none;
+ }
+
+ .info-list a:hover,
+ .info-list a:focus,
+ .info-list a:active {
+   color: #ffbc9e;
+ }
+
+.copyright-info a:hover,
+.copyright-info a:focus,
+.copyright-info a:active {
+  color: #ffbc9e;
+}
+
+.modal {
+    color: #323232;
+
+    background-color: #f8f7f4;
+}
+
+.menu-form {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.search-form input[type="search"],
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+}
+
+.search-form input:hover,
+.login-form input:hover {
+  border: 2px solid #c7c6c5;
+}
+
+.search-form input:focus,
+.login-form input:focus {
+  font-weight: 700;
+  color: #323232;
+
+  border: 2px solid #8fbdec;
+  outline: none;
+}
+
+.login-info a {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+  text-decoration: underline;
+
+}
+
+.login-info a:hover,
+.login-info a:focus,
+.login-info a:active {
+  color: #e84d37;
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  border: 2px solid #c7c6c5;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  font-weight: 700;
+  color: #323232;
+
+  border: 2px solid #8fbdec;
+  outline: none;
+}
+
+.feedback-info {
+  font-size: 24px;
+  line-height: 28px;
+}

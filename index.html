@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -20,13 +23,15 @@
           <li>
             <a class="login-link" href="login.html">Вход</a>
           </li>
+          <li>
+            <a class="cart" href="#">Пусто</a>
+          </li>
         </ul>
-        <span class="cart">Пусто</span>
       </nav>
     </header>
     <main class="container">
       <section class="features">
-        <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+        <h1 class="main-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
         <ul class="feature-list">
           <li class="feature-item">
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -44,22 +49,22 @@
       </section>
       <article class="article">
         <h2>Новое в нашем блоге</h2>
-        <a href="#">
-          <h3 class="article-title">10 способов сервировки фруктовых щербетов к столу</h3>
-        </a>
+        <p class="article-info">
+          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        </p>
       </article>
       <section class="subscription">
         <p class="subscription-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="subscription-email">Электронная почта</label>
           <input type="text" id="subscription-email" name="email" placeholder="Электронная почта">
-          <button type="submit">Отправить</button>
+          <button class="button" type="submit">Отправить</button>
         </form>
       </section>
     </main>
     <footer class="main-footer">
       <div class="social-footer">
-        <ul>
+        <ul class="social-list">
           <li><a class="social-button" href="#">Твиттер</a></li>
           <li><a class="social-button" href="#">Инстаграмм</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -76,7 +81,7 @@
       </div>
       <div class="copyright-footer">
         <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+        <p class="copyright-info">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </div>
     </footer>
 
@@ -84,7 +89,7 @@
       <h2 class="visually-hidden">Главное меню</h2>
       <form class="menu-form" action="https://echo.htmlacademy.ru" method="post">
         <select class="menu" name="menu">
-          <option>Новинки</option>
+          <option class="bold">Новинки</option>
           <option>Сливочное</option>
           <option>Щербеты</option>
           <option>Фруктовый лед</option>
@@ -112,8 +117,8 @@
          </p>
          <p class="login-info">
            <button class="button" type="submit">Войти</button>
-           <a class="forget" href="#">Забыли пароль</a>
-           <a class="registration" href="#">Новая регистрация</a>
+           <a href="#">Забыли пароль</a>
+           <a href="#">Новая регистрация</a>
          </p>
        </form>
     </section>
