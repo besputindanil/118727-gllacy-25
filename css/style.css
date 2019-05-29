@@ -52,8 +52,8 @@ a {
 
 .site-navigation a:hover,
 .site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.login-link:hover,
+.login-link:focus {
   color: #323232;
 
   background-color: #f7f6f3;
@@ -141,6 +141,79 @@ a {
   outline: none;
 }
 
+/*Разметка внтуренней страницы*/
+
+.site-navigation-current a {
+  background-color: #d07058;
+}
+
+.user-navigation .cart-2 {
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  }
+
+.breadcrumps {
+  list-style: none;
+}
+
+.breadcrumps a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.breadcrumps a:hover,
+.breadcrumps a:focus,
+.breadcrumps a:active {
+  color: #ffbc9e;
+}
+
+.breadcrumps-current {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item a {
+  color: #ffffff;
+}
+
+.catalog-item h3 {
+  font: inherit;
+
+  text-decoration: underline;
+}
+
+.catalog-item-price b {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.weight {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  background-color: #9bafa3;
+}
+
 .main-footer {
   font-size: 13px;
   line-height: 18px;
@@ -169,87 +242,5 @@ a {
 }
 
 .modal {
-    color: #323232;
-
-    background-color: #f8f7f4;
-}
-
-.menu-form {
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.search-form input[type="search"],
-.login-form input[type="text"],
-.login-form input[type="password"] {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #999999;
-
-  background-color: #ffffff;
-  border: 1px solid #d3d3d2;
-}
-
-.search-form input:hover,
-.login-form input:hover {
-  border: 2px solid #c7c6c5;
-}
-
-.search-form input:focus,
-.login-form input:focus {
-  font-weight: 700;
-  color: #323232;
-
-  border: 2px solid #8fbdec;
-  outline: none;
-}
-
-.login-info a {
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #323232;
-  text-decoration: underline;
-
-}
-
-.login-info a:hover,
-.login-info a:focus,
-.login-info a:active {
-  color: #e84d37;
-}
-
-.feedback-form input[type="text"],
-.feedback-form textarea {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #999999;
-
-  background-color: #ffffff;
-  border: 1px solid #d3d3d2;
-}
-
-.feedback-form input:hover,
-.feedback-form textarea:hover {
-  border: 2px solid #c7c6c5;
-}
-
-.feedback-form input:focus,
-.feedback-form textarea:focus {
-  font-weight: 700;
-  color: #323232;
-
-  border: 2px solid #8fbdec;
-  outline: none;
-}
-
-.feedback-info {
-  font-size: 24px;
-  line-height: 28px;
+  display: none;
 }
