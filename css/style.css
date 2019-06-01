@@ -159,7 +159,7 @@ a {
   background-color: #d07058;
 }
 
-.user-navigation .cart-2 {
+.red-cart-icon {
   color: #323232;
 
   background-color: #f7f6f3;
@@ -253,6 +253,10 @@ a {
   color: #ffbc9e;
 }
 
+.catalog-list,
+.search-form,
+.login-form,
+.cart-form,
 .modal {
   display: none;
 }
