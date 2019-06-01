@@ -65,6 +65,18 @@ a {
   background-color: #ededed;
 }
 
+.info-time {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.info-telephone {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  }
+
 .features {
   background-image: url("img/wafer.jpg");
   background-color: #eadbbc;
@@ -243,4 +255,25 @@ a {
 
 .modal {
   display: none;
+}
+
+/*---Сеточные стили---*/
+
+.main-header {
+  margin-bottom: 285px;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+ .user-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header-logo {
+  width: 154px;
+  height: 64px;
 }
