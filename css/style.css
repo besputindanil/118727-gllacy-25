@@ -16,7 +16,6 @@ a {
 }
 
 .button {
-  font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -52,8 +51,10 @@ a {
 
 .site-navigation a:hover,
 .site-navigation a:focus,
-.login-link:hover,
-.login-link:focus {
+.search-icon:hover,
+.search-icon:focus,
+.login-icon:hover,
+.login-icon:focus {
   color: #323232;
 
   background-color: #f7f6f3;
@@ -78,7 +79,7 @@ a {
   }
 
 .features {
-  background-image: url("img/wafer.jpg");
+  background-image: url("../img/wafer.jpg");
   background-color: #eadbbc;
 }
 
@@ -98,8 +99,10 @@ a {
 }
 
 .article {
-  background-image: url("img/strawberry.jpg");
+  background-image: url("../img/strawberry.jpg");
   background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .article h2 {
