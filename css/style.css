@@ -262,27 +262,32 @@ a {
   color: #ffbc9e;
 }
 
-.catalog-list,
+.catalog-navigation,
 .search-form,
 .login-form,
 .cart-form,
-.modal {
+.modal,
+.catalog-item .button {
   display: none;
 }
 
 /* Сеточные стили */
 
+/*---Выделение для сеток---
+
 body > * {
-  background: rgba(255, 0, 0, 0.3);
+  background-color: rgba(255, 0, 0, 0.3);
 }
 
 body > * > * {
-  background: rgba(255, 255, 0, 0.3);
+  background-color: rgba(255, 255, 0, 0.3);
 }
 
 body > * > * > *{
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
+*/
+
 .main-header,
 .container,
 .main-footer {
@@ -399,5 +404,42 @@ body > * > * > *{
 .copyright-footer {
   width: 267px;
   margin: 0;
+  padding: 0;
+}
+
+/*Сеточные стили страницы каталога*/
+
+.breadcrumps-contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumps {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.page-title {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.catalog {
+  margin-bottom: 55px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.catalog-item {
+  width: 267px;
+  margin: 0;
+  margin-bottom: 37px;
   padding: 0;
 }
