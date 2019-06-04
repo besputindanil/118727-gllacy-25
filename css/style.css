@@ -72,13 +72,13 @@ a {
   background-color: #ededed;
 }
 
-.time {
+.header-time {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
 }
 
-.telephone {
+.header-phone {
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
@@ -273,7 +273,7 @@ a {
 
 /* Сеточные стили */
 
-/*---Выделение для сеток---
+---Выделение для сеток---
 
 body > * {
   background-color: rgba(255, 0, 0, 0.3);
@@ -283,10 +283,10 @@ body > * > * {
   background-color: rgba(255, 255, 0, 0.3);
 }
 
-body > * > * > *{
+body > * > * > * {
   background-color: rgba(255, 255, 255, 0.3);
 }
-*/
+
 
 .main-header,
 .container,
@@ -338,13 +338,13 @@ body > * > * > *{
   margin-bottom: 285px;
 }
 
-.time,
-.telephone {
+.header-time,
+.header-phone {
   margin: 0;
   padding: 0;
 }
 
-.time {
+.header-time {
   margin-bottom: 6px;
   padding-left: 18px;
 }
