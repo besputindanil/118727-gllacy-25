@@ -221,17 +221,18 @@
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-info">Мы обязательно вам ответим!</p>
-        <p>
+        <button class="button-close visually-hidden" type="button">Закрыть</button>
+        <p class="feedback-question">
           <label class="visually-hidden" for="feedback-name">Имя</label>
           <input type="text" id="feedback-name" name="name" placeholder="Как вас зовут?">
         </p>
-        <p>
+        <p class="feedback-question">
           <label class="visually-hidden" for="feedback-email">Электронная почта</label>
           <input type="text" id="feedback-email" name="email" placeholder="Ваша почта для ответа?">
         </p>
-        <p>
+        <p class="feedback-text">
           <label class="visually-hidden" for="feedback-question">Ваш вопрос</label>
-          <textarea id="feedback-question" name="question" rows="6">Напишите что-нибудь?</textarea>
+          <textarea id="feedback-question" name="question" rows="6">Напишите что-нибудь...</textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>

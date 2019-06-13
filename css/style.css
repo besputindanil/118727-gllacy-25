@@ -288,10 +288,14 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form input:hover {
+  padding: 10px 13px;
+
   border: 2px solid #c7c6c5;
 }
 
 .search-form input:focus {
+  padding: 10px 13px;
+
   font-weight: 700;
   color: #323232;
 
@@ -324,7 +328,7 @@ input[type="radio"].visually-hidden {
   margin-top: 20px;
   margin-right: 17px;
   margin-left: 19px;
-  padding: 10px 14px;
+  padding: 11px 14px;
 
   font-size: 14px;
   line-height: 24px;
@@ -337,11 +341,15 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
-.login input:hover {
+.login-form input:hover {
+  padding: 10px 13px;
+
   border: 2px solid #c7c6c5;
 }
 
 .login-form input:focus {
+  padding: 10px 13px;
+
   font-weight: 700;
   color: #323232;
 
@@ -381,6 +389,87 @@ input[type="radio"].visually-hidden {
 
 .login:hover .login-form {
   display: block;
+}
+
+.modal-feedback {
+  width: 477px;
+  padding: 25px;
+  padding-top: 19px;
+
+  background-color: #f8f7f4;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-info {
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.feedback-question {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.feedback-text {
+  margin: 0;
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+  padding: 11px 14px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+}
+
+.modal input[type="text"] {
+  width: 265px;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  resize: none;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  padding: 10px 13px;
+
+  border: 2px solid #c7c6c5;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  padding: 10px 13px;
+
+  font-weight: 700;
+  color: #323232;
+
+  border: 2px solid #8fbdec;
+  outline: none;
+}
+
+.feedback-form .button {
+  align-self: flex-end;
+  margin-top: 25px;
+  padding: 11px 24px;
+
 }
 
 /*Стилизация main*/
@@ -548,10 +637,14 @@ input[type="radio"].visually-hidden {
 }
 
 .subscription-form input:hover {
+  padding: 10px 13px;
+
   border: 2px solid #c7c6c5;
 }
 
 .subscription-form input:focus {
+  padding: 10px 13px;
+
   font-weight: 700;
   color: #323232;
 
