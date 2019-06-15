@@ -51,6 +51,7 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
 
   background-color: #f16542;
+  border-radius: 20px;
   border: none;
 }
 
@@ -120,13 +121,17 @@ input[type="radio"].visually-hidden {
 .site-navigation a {
   color: #ffffff;
 
-  text-decoration: underline;
+  border-radius: 14px;
 }
 
+.navigation-title {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 .user-navigation a {
   color: #ffffff;
 
   background-color: #a0b5a9;
+  border-radius: 14px;
 }
 
 .site-navigation a:hover,
@@ -149,11 +154,13 @@ input[type="radio"].visually-hidden {
 .site-navigation a,
 .user-navigation a {
   display: block;
-  padding: 7px 15px;
+  padding: 6px 15px;
 }
 
 .user-navigation .search-link {
   padding: 7px;
+
+  border-radius: 50%;
 }
 
 .search {
@@ -161,6 +168,7 @@ input[type="radio"].visually-hidden {
 
   width: 33px;
   height: 33px;
+
 }
 
 .search-link:hover path,
@@ -214,6 +222,7 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
   background-color: #f8f7f4;
+  border-radius: 5px;
 }
 
 .catalog-navigation p {
@@ -226,6 +235,8 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   font-weight: 700;
   color: #323232;
+
+  border-bottom: 1px solid #d1d0ce;
 }
 
 .catalog-link:hover .catalog-navigation {
@@ -244,6 +255,7 @@ input[type="radio"].visually-hidden {
   color: #323232;
 
   text-decoration: none;
+  border-radius: 0;
 }
 
 .catalog-navigation .last-item {
@@ -267,6 +279,7 @@ input[type="radio"].visually-hidden {
   width: 341px;
 
   background-color: #f8f7f4;
+  border-radius: 5px;
 }
 
 .search:hover .search-form {
@@ -311,11 +324,13 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 40px;
   right: 0;
+  z-index: 1;
 
   display: none;
   width: 278px;
 
   background-color: #f8f7f4;
+  border-radius: 5px;
 }
 
 .login-form p {
@@ -391,87 +406,6 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.modal-feedback {
-  width: 477px;
-  padding: 25px;
-  padding-top: 19px;
-
-  background-color: #f8f7f4;
-}
-
-.feedback-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.feedback-info {
-  margin: 0;
-  margin-bottom: 23px;
-
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 500;
-  color: #323232;
-}
-
-.feedback-question {
-  margin: 0;
-  margin-bottom: 20px;
-}
-
-.feedback-text {
-  margin: 0;
-}
-
-.feedback-form input[type="text"],
-.feedback-form textarea {
-  padding: 11px 14px;
-
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #999999;
-
-  background-color: #ffffff;
-  border: 1px solid #d3d3d2;
-}
-
-.modal input[type="text"] {
-  width: 265px;
-}
-
-.feedback-form textarea {
-  width: 100%;
-  box-sizing: border-box;
-
-  resize: none;
-}
-
-.feedback-form input:hover,
-.feedback-form textarea:hover {
-  padding: 10px 13px;
-
-  border: 2px solid #c7c6c5;
-}
-
-.feedback-form input:focus,
-.feedback-form textarea:focus {
-  padding: 10px 13px;
-
-  font-weight: 700;
-  color: #323232;
-
-  border: 2px solid #8fbdec;
-  outline: none;
-}
-
-.feedback-form .button {
-  align-self: flex-end;
-  margin-top: 25px;
-  padding: 11px 24px;
-
-}
-
 /*Стилизация main*/
 
 .container {
@@ -486,6 +420,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/wafer.jpg");
   background-color: #eadbbc;
+  border-radius: 13px;
 }
 
 .feature-info {
@@ -566,6 +501,8 @@ input[type="radio"].visually-hidden {
 .article,
 .subscription {
   width: 560px;
+
+  border-radius: 13px;
 }
 
 .article {
@@ -768,6 +705,89 @@ input[type="radio"].visually-hidden {
   color: #ffbc9e;
 }
 
+/*Стилизация модального окна*/
+
+.modal-feedback {
+  width: 477px;
+  padding: 25px;
+  padding-top: 19px;
+
+  background-color: #f8f7f4;
+  border-radius: 9px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-info {
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.feedback-question {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.feedback-text {
+  margin: 0;
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+  padding: 11px 14px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+}
+
+.modal input[type="text"] {
+  width: 265px;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  resize: none;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  padding: 10px 13px;
+
+  border: 2px solid #c7c6c5;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  padding: 10px 13px;
+
+  font-weight: 700;
+  color: #323232;
+
+  border: 2px solid #8fbdec;
+  outline: none;
+}
+
+.feedback-form .button {
+  align-self: flex-end;
+  margin-top: 25px;
+  padding: 11px 24px;
+}
+
 /*Стилизация inner page*/
 
 .inner-page .user-navigation {
@@ -904,9 +924,90 @@ input[type="radio"].visually-hidden {
   color: #ffbc9e;
 }
 
-.cart-form,
 .catalog-item .button {
   display: none;
 }
 
-/*Стилизация модального окна*/
+/*Стилизация всплывающего окна корзины*/
+
+.cart {
+  position: relative;
+}
+
+.cart-info {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+
+  display: none;
+  width: 541px;
+  padding: 20px 15px;
+
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
+
+.cart:hover .cart-info {
+  display: block;
+}
+
+.cart-list {
+  padding: 0;
+
+  list-style: none;
+  border-bottom: 1px solid #cacac7;
+}
+
+.cart-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-close {
+width: 11px;
+height: 11px;
+
+background-image: url("../img/x-small.svg");
+background-color: transparent;
+background-repeat: no-repeat;
+border: 0;
+}
+
+.cart-list img {
+  margin:0 14px;
+}
+
+.product-title {
+  width: 216px;
+  margin-right: 32px;
+}
+
+.product-price {
+  margin-right: 30px;
+
+  color: #999999;
+}
+
+.product-weight {
+  margin-right: 4px;
+}
+
+.cart-order {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cart-total-price {
+  margin: 17px 0;
+
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
