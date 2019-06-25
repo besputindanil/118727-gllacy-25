@@ -602,6 +602,17 @@ input[type="radio"].visually-hidden {
   align-self: flex-end;
 }
 
+.hits-item::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url("../img/hit.svg");
+}
+
 .features {
   margin-bottom: 35px;
   padding: 27px 20px;
@@ -1160,7 +1171,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -7px;
   left: -13px;
@@ -1184,6 +1195,7 @@ input[type="radio"].visually-hidden {
 .catalog-item:hover::after,
 .catalog-item:focus::after  {
   background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .catalog-item a:hover,
