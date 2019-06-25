@@ -794,6 +794,82 @@ input[type="radio"].visually-hidden {
   margin-left: 11px;
 }
 
+.map {
+  position: relative;
+
+  width: 1200px;
+  height: 431px;
+  margin: 0 -27px;
+
+  background-color: #ffec97;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+}
+
+.map-info {
+  position: absolute;
+  top: 62px;
+  right: 27px;
+
+  width: 252px;
+  padding: 30px 25px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+
+  background-color: #ffffff;
+  border-radius: 13px;
+}
+
+.map-info span {
+  display: block;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.map-info-adress {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.map-info-phone {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.map-info-adress span {
+  margin-top: 3px;
+}
+
+.map-info-phone span {
+  margin-top: 7px;
+  margin-bottom: 3px;
+}
+
+.map-button {
+  padding: 10px 27px;
+}
+
+.map::before {
+  content: "";
+
+  position: absolute;
+  top: 137px;
+  left: 266px;
+
+  width: 80px;
+  height: 140px;
+
+  background-image: url("../img/pin.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 /*Стилизация footer*/
 
 .main-footer {
