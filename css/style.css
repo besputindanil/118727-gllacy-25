@@ -551,7 +551,55 @@ input[type="radio"].visually-hidden {
 /*Окончание стилизации слайдера*/
 
 .promotions {
-  
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.promo-raspberries,
+.promo-сhocolate {
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  padding: 20px;
+
+  border-radius: 13px;
+}
+
+.promo-raspberries {
+  background-color: #ce0431;
+  background-image: url("../img/raspberries.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-сhocolate {
+  background-color: #7a4f37;
+  background-image: url("../img/chocolate.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.promo-info {
+  margin: 0;
+  margin-bottom: 44px;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700px;
+}
+
+.promo-button {
+  align-self: flex-end;
 }
 
 .features {
