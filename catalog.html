@@ -131,6 +131,7 @@
     <main class="container">
       <h1 class="page-title">Сливочное мороженое</h1>
       <section class="filters">
+        <h2 class="visually-hidden">Фильтры для поиска</h2>
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="filters-line-first">
             <fieldset class="filter-sorting">
@@ -233,13 +234,13 @@
                       <span class="filler-checkbox-indicator"></span>
                       сиропы
                     </label>
-                    <li>
-                      <label class="filler-checkbox">
-                        <input type="checkbox" name="filler-checkbox" class="visually-hidden" value="джемы">
-                        <span class="filler-checkbox-indicator"></span>
-                        джемы
-                      </label>
-                    </li>
+                  </li>
+                  <li>
+                    <label class="filler-checkbox">
+                      <input type="checkbox" name="filler-checkbox" class="visually-hidden" value="джемы">
+                      <span class="filler-checkbox-indicator"></span>
+                      джемы
+                    </label>
                   </li>
                 </ul>
               </div>
@@ -432,25 +433,23 @@
             <button class="button" type="button">Быстрый просмотр</button>
           </li>
         </ul>
-        <div class="pagination">
-          <ul class="pagination-list">
-            <ul class="pagination-item pagination-item-current">
-              <a href="#">1</a>
-            </ul>
-            <ul class="pagination-item">
-              <a href="#">2</a>
-            </ul>
-            <ul class="pagination-item">
-              <a href="#">3</a>
-            </ul>
-            <ul class="pagination-item">
-              <a href="#">4</a>
-            </ul>
-            <ul class="pagination-item">
-              <a href="#">5</a>
-            </ul>
-          </ul>
-        </div>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current">
+            <a href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">5</a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="main-footer">
