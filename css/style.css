@@ -47,7 +47,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #fefefe;
 
-  text-align:center;
+  text-align: center;
   vertical-align: middle;
 
   background-color: #f26843;
@@ -1165,13 +1165,368 @@ input[type="radio"].visually-hidden {
 
 .page-title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   padding: 0;
 
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
   }
+
+.filters {
+  margin-bottom: 40px;
+}
+
+.filters legend {
+  margin-bottom: 6px;
+  margin-left: 15px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filters-line-first,
+.filters-line-second {
+  display: flex;
+  justify-content: space-between;
+  width: 858px;
+}
+
+.filters-line-first {
+  margin-bottom: 17px;
+}
+
+.filter-sorting {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.sorting-list-wrapper {
+  position: relative;
+
+  width: 163px;
+  padding: 8px 14px 8px 16px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+
+.sorting-list {
+  display: block;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background: transparent;
+  border: none;
+}
+
+.sorting-icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 1;
+}
+
+.sorting-list:hover,
+.sorting-list:focus {
+  color: #323232;
+}
+
+.sorting-list:hover + .sorting-icon path,
+.sorting-list:focus + .sorting-icon path {
+  fill: #323232;
+}
+
+.filter-range {
+  width: 218px;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.price-controls {
+  position: relative;
+}
+
+.max-price {
+  padding-left: 13px;
+}
+
+.price-controls input {
+  width: 55px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background: none;
+  border: none;
+}
+
+.price-controls::after {
+  content: "";
+  top: 8px;
+  right: 60px;
+
+  position: absolute;
+
+  width: 7px;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.range-controls-wrapper {
+  width: 176px;
+  padding: 16px 21px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+
+.range-controls {
+  position: relative;
+}
+
+.range-controls .scale {
+  width: 176px;
+  height: 4px;
+
+  background-color: rgba(248, 247, 244, 0.5);
+}
+
+.range-controls .bar {
+  width: 107px;
+  height: 4px;
+  margin-left: 17px;
+
+  background-color: #f8f7f4;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 13px;
+}
+
+.range-toggle-max {
+  left: 111px;
+}
+
+.range-toggle:hover {
+  width: 5px;
+  height: 5px;
+
+  border: 9px solid #ffffff;
+}
+
+.fat-levels-wrapper {
+  width: 385px;
+  padding: 7px 16px 7px 14px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+
+.fat-levels {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.fat-levels label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filter-fat {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.fat-radio {
+  position: relative;
+
+  padding-left: 31px;
+
+  cursor: pointer;
+}
+
+.fat-radio input[type="radio"] + .fat-radio-indicator {
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  width: 16px;
+  height: 16px;
+
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.fat-radio input[type="radio"]:checked + .fat-radio-indicator::after {
+  content: "";
+  top: 4px;
+  left: 4px;
+
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.fat-radio input[type="radio"] + .fat-radio-indicator:hover {
+  border-color: #ffffff;
+}
+
+.fat-radio input[type="radio"]:checked + .fat-radio-indicator:hover::after {
+  background-color: #ffffff;
+}
+
+.fat-radio input[type="radio"]:focus  + .fat-radio-indicator {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-fillers {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.fillers-list-wrapper {
+  width: 670px;
+  padding:8px 19px 8px 16px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
+
+.filler-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.filler-list label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filler-checkbox {
+  position: relative;
+
+  padding-left: 32px;
+
+  cursor: pointer;
+}
+
+.filler-checkbox input[type="checkbox"] + .filler-checkbox-indicator {
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.8;
+}
+
+.filler-checkbox input[type="checkbox"]:checked + .filler-checkbox-indicator {
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.8;
+}
+
+.filler-checkbox input[type="checkbox"] + .filler-checkbox-indicator:hover {
+  opacity: 1;
+}
+
+.filler-checkbox input[type="checkbox"]:checked + .filler-checkbox-indicator:hover {
+  opacity: 1;
+}
+
+.filler-checkbox input[type="checkbox"]:focus + .filler-checkbox-indicator {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filters-form-button {
+  align-self: flex-end;
+  display: inline-block;
+  padding: 8px 27px 8px 29px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 18px;
+
+  cursor: pointer;
+}
+
+.filters-form-button:hover,
+.filters-form-button:focus {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.filters-form-button:active {
+  padding: 10px 29px 10px 31px;
+
+  background-color: #ededed;
+  border: none;
+  box-shadow: inset 0px 2px 1px 0px #696969;
+}
 
 .catalog {
   margin-bottom: 55px;
