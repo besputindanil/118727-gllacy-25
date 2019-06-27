@@ -1529,7 +1529,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog {
-  margin-bottom: 55px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .catalog-list {
@@ -1537,6 +1537,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 104px;
   padding: 0;
 
   list-style: none;
@@ -1648,6 +1649,85 @@ input[type="radio"].visually-hidden {
 .catalog-item:hover,
 .catalog-item:focus {
   z-index: 3;
+}
+
+.pagination-list {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 23px;
+
+  list-style: none;
+
+}
+
+.pagination-item {
+  padding: 0;
+}
+
+.pagination-item a {
+  display: block;
+  padding: 5px 9px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  border-radius: 50%;
+}
+
+.pagination-item-current a {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item a:active {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.pagination-list::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  right: 176px;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  transform: rotate(180deg);
+  opacity: 0.2;
+}
+
+.pagination-list::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  right: 0px;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 /*Стилизация всплывающего окна корзины*/
