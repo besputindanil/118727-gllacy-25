@@ -954,16 +954,16 @@ input[type="radio"].visually-hidden {
    padding: 0;
  }
 
- .left {
+ .info-list-left {
    margin-left: 23px;
    margin-right: 32px;
  }
 
- .left .first {
+ .info-list-left .first {
    position: relative;
  }
 
- .left .first::before {
+ .info-list-left .first::before {
    content: "";
 
    position: absolute;
