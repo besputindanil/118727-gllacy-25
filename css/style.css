@@ -40,7 +40,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   display: inline-block;
-  padding: 11px 15px;
+  padding: 9px 14px;
 
   font-size: 18px;
   line-height: 24px;
@@ -52,7 +52,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  border-radius: 20px;
+  border-radius: 22px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
 
@@ -79,7 +79,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .main-navigation {
@@ -87,20 +87,20 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-logo {
-  width: 154px;
+  width: 180px;
   height: 64px;
   padding-top: 9px;
 }
 
 .main-navigation-wrapper {
   width: 100%;
-  margin-left: 24px;
+  margin-left: 10px;
 }
 
 .navigation-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 24px;
 }
 
 .site-navigation {
@@ -146,7 +146,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 14px;
+  border-radius: 15px;
 }
 
 .site-navigation a:hover,
@@ -169,11 +169,14 @@ input[type="radio"].visually-hidden {
 .site-navigation a,
 .user-navigation a {
   display: block;
-  padding: 6px 15px;
 }
 
-.user-navigation .search-link {
-  padding: 7px;
+.site-navigation a {
+  padding: 6px 14px;
+}
+
+.search .search-link {
+  padding: 6px;
 
   border-radius: 50%;
 }
@@ -181,8 +184,25 @@ input[type="radio"].visually-hidden {
 .search {
   position: relative;
 
-  width: 33px;
-  height: 33px;
+  width: 31px;
+  height: 31px;
+}
+
+.login-link,
+.cart-link {
+  position: relative;
+}
+
+.login-link svg,
+.cart-link svg {
+  position: absolute;
+  top: 6px;
+  left: 16px;
+}
+
+.login-link,
+.cart-link {
+  padding: 8px 16px 8px 44px;
 }
 
 .search-link:hover path,
@@ -204,7 +224,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-time {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   padding-left: 18px;
 
   font-size: 14px;
@@ -226,8 +246,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-navigation {
   position: absolute;
-  top: 38px;
-  left: -7px;
+  top: 36px;
+  left: -5px;
   z-index: 3;
 
   display: none;
@@ -237,6 +257,7 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
   background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
 
@@ -244,7 +265,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding-top: 12px;
   padding-left: 21px;
-  padding-bottom: 14px;
+  padding-bottom: 11px;
 
   font-size: 14px;
   line-height: 16px;
@@ -260,8 +281,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-navigation a {
   display: block;
-  padding-top: 9px;
-  padding-left: 20px;
+  padding-top: 8px;
+  padding-left: 21px;
   padding-bottom: 7px;
 
   font-size: 14px;
@@ -287,13 +308,14 @@ input[type="radio"].visually-hidden {
 }
 .search-form {
   position: absolute;
-  top: 40px;
+  top: 36px;
   right: 0;
 
   display: none;
   width: 341px;
 
   background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
 
@@ -313,16 +335,17 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 .search-form input:hover {
-  padding: 10px 13px;
+  padding: 9px 13px;
 
   border: 2px solid #c7c6c5;
 }
 
 .search-form input:focus {
-  padding: 10px 13px;
+  padding: 9px 13px;
 
   font-weight: 700;
   color: #323232;
@@ -337,7 +360,7 @@ input[type="radio"].visually-hidden {
 
 .login-form {
   position: absolute;
-  top: 40px;
+  top: 36px;
   right: 0;
   z-index: 1;
 
@@ -345,6 +368,7 @@ input[type="radio"].visually-hidden {
   width: 278px;
 
   background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
 
@@ -358,7 +382,7 @@ input[type="radio"].visually-hidden {
   margin-top: 20px;
   margin-right: 17px;
   margin-left: 19px;
-  padding: 11px 14px;
+  padding: 9px 15px;
 
   font-size: 14px;
   line-height: 24px;
@@ -367,18 +391,19 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
+  border-radius: 5px;
 
   box-sizing: border-box;
 }
 
 .login-form input:hover {
-  padding: 10px 13px;
+  padding: 8px 14px;
 
   border: 2px solid #c7c6c5;
 }
 
 .login-form input:focus {
-  padding: 10px 13px;
+  padding: 8px 14px;
 
   font-weight: 700;
   color: #323232;
@@ -393,11 +418,13 @@ input[type="radio"].visually-hidden {
 
 .login-form .button {
   margin: 20px;
-  padding: 14px 26px;
+  padding: 11px 25px;
+
+  border-radius: 22px;
 }
 
 .login-info {
-  padding-top: 20px;
+  padding-top: 17px;
 }
 
 .login-info a {
@@ -458,7 +485,7 @@ input[type="radio"].visually-hidden {
 .slider {
   position: relative;
 
-  margin-bottom: 38px;
+  margin-bottom: 41px;
   padding: 0 27px;
 
   text-align: center;
@@ -562,7 +589,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   width: 520px;
-  padding: 20px;
+  padding: 16px 20px 24px 20px;
 
   border-radius: 13px;
 }
@@ -596,11 +623,15 @@ input[type="radio"].visually-hidden {
 
   font-size: 18px;
   line-height: 22px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .promo-button {
   align-self: flex-end;
+
+  padding: 11px 22px;
+
+  border-radius: 22px;
 }
 
 .hits-item::before {
@@ -615,12 +646,12 @@ input[type="radio"].visually-hidden {
 }
 
 .features {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   padding: 27px 20px;
 
   background-image: url("../img/wafer.jpg");
   background-color: #eadbbc;
-  border-radius: 13px;
+  border-radius: 15px;
 }
 
 .feature-info {
@@ -640,7 +671,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
-
   list-style: none;
 }
 
@@ -648,13 +678,13 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   width: 540px;
-  margin: 0px;
-  padding: 0px;
 
   color: #323232;
 }
 
 .feature-list p {
+  margin: 0;
+  padding-top: 22px;
   padding-left: 58px;
 }
 
@@ -662,7 +692,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 7px;
+  top: 8px;
   width: 50px;
   height: 50px;
 }
@@ -694,18 +724,18 @@ input[type="radio"].visually-hidden {
 .useful-info {
   display: flex;
   justify-content: space-between;
-  min-height: 220px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .article,
 .subscription {
-  width: 560px;
-
-  border-radius: 13px;
+  border-radius: 15px;
 }
 
 .article {
+  width: 560px;
+  min-height: 220px;
+
   background-image: url("../img/strawberry.jpg");
   background-color: #ffffff;
   background-position: center;
@@ -713,7 +743,7 @@ input[type="radio"].visually-hidden {
 }
 
 .article h2 {
-  margin-top: 25px;
+  margin-top: 23px;
   margin-bottom: 4px;
   margin-left: 20px;
   padding: 0;
@@ -725,7 +755,7 @@ input[type="radio"].visually-hidden {
 }
 
 .article-info {
-  width: 280px;
+  width: 290px;
   margin: 0;
   margin-left: 20px;
   padding: 0;
@@ -747,25 +777,29 @@ input[type="radio"].visually-hidden {
 }
 
 .subscription {
+  width: 508px;
+  padding: 28px 22px;
+
   background-color: #f8f7f4;
   border: 5px solid #fe9e90;
   border-image: url("../img/subscription-bg.svg") 5 round;
 }
 
 .subscription-info {
-  margin: 30px 22px;
+  margin: 0;
+  margin-bottom: 35px;
   padding: 0;
 
   color: #5a5a5a;
 }
 
 .subscription-form {
-  margin: 0 22px;
+  margin: 0;
 }
 
 .subscription-form input[type="text"] {
   width: 338px;
-  padding: 11px 14px;
+  padding: 10px 14px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -773,6 +807,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 .subscription-form input:hover {
@@ -792,7 +827,10 @@ input[type="radio"].visually-hidden {
 }
 
 .subscription-form .button {
-  margin-left: 11px;
+  margin-left: 8px;
+  padding: 9px 18px;
+
+  border-radius: 28px;
 }
 
 .map {
@@ -809,11 +847,11 @@ input[type="radio"].visually-hidden {
 
 .map-info {
   position: absolute;
-  top: 62px;
+  top: 63px;
   right: 27px;
 
   width: 252px;
-  padding: 30px 25px;
+  padding: 29px 25px;
 
   font-size: 14px;
   line-height: 20px;
@@ -833,7 +871,7 @@ input[type="radio"].visually-hidden {
 
 .map-info-adress {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   padding: 0;
 }
 
@@ -844,16 +882,16 @@ input[type="radio"].visually-hidden {
 }
 
 .map-info-adress span {
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .map-info-phone span {
-  margin-top: 7px;
-  margin-bottom: 3px;
+  margin-top: 5px;
+  margin-bottom: 2px;
 }
 
 .map-button {
-  padding: 10px 27px;
+  padding: 8px 27px;
 }
 
 .map::before {
@@ -888,36 +926,35 @@ input[type="radio"].visually-hidden {
 
 .footer-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-top: 36px;
+  padding-top: 27px;
   padding-bottom: 29px;
 }
 
 .social-footer {
-  width: 267px;
+  margin-right: 215px;
 }
 
- .social-list,
- .info-list {
-   list-style: none;
- }
+.social-list,
+.info-list {
+  list-style: none;
+}
 
- .social-list {
-   display: flex;
-   justify-content: space-between;
-   width: 185px;
-   margin: 0;
-   padding: 0;
- }
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 185px;
+  margin: 0;
+  padding: 0;
+}
 
- .social-button {
-   display: block;
-   width: 32px;
-   height: 32px;
+.social-button {
+  display: block;
+  width: 32px;
+  height: 32px;
 
-   border: 3px solid rgba(255, 255, 255, 0.5);
-   border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
 }
 
 .social-button path {
@@ -941,8 +978,7 @@ input[type="radio"].visually-hidden {
 
  .info-footer {
    display: flex;
-   width: 560px;
-   padding-left: 100px;
+   width: 330px;
  }
 
  .info-footer a {
@@ -951,12 +987,17 @@ input[type="radio"].visually-hidden {
 
  .info-list {
    margin: 0;
+   margin-top: -3px;
    padding: 0;
+ }
+
+ .info-list li:last-child {
+   padding-top: 5px;
  }
 
  .info-list-left {
    margin-left: 23px;
-   margin-right: 32px;
+   margin-right: 31px;
  }
 
  .info-list-left .first {
@@ -967,6 +1008,7 @@ input[type="radio"].visually-hidden {
    content: "";
 
    position: absolute;
+   top: 2px;
    left: -22px;
 
    width: 15px;
@@ -986,13 +1028,16 @@ input[type="radio"].visually-hidden {
  }
 
  .copyright-footer {
-   width: 267px;
-   padding-left: 75px;
+   width: 190px;
+   margin-top: -8px;
+   margin-left: auto;
+
+   font-size: 12px;
+   line-height: 18px;
  }
 
 .copyright-info {
   margin: 0;
-  margin-top: 5px;
   padding: 0;
 }
 
@@ -1032,7 +1077,7 @@ input[type="radio"].visually-hidden {
   width: 428px;
   margin-left: -239px;
   padding: 25px;
-  padding-top: 19px;
+  padding-top: 17px;
 
   background-color: #f8f7f4;
   border-radius: 9px;
@@ -1051,7 +1096,7 @@ input[type="radio"].visually-hidden {
 
 .feedback-info {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   font-size: 24px;
   line-height: 28px;
@@ -1086,7 +1131,7 @@ input[type="radio"].visually-hidden {
 
 .feedback-form input[type="text"],
 .feedback-form textarea {
-  padding: 11px 14px;
+  padding: 9px 14px;
 
   font-size: 16px;
   line-height: 24px;
@@ -1095,14 +1140,16 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 .modal-feedback input[type="text"] {
-  width: 265px;
+  width: 240px;
 }
 
 .feedback-form textarea {
   width: 100%;
+
   box-sizing: border-box;
 
   resize: none;
@@ -1126,10 +1173,12 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
-.feedback-form .button {
+.modal-button {
   align-self: flex-end;
-  margin-top: 25px;
+  margin-top: 10px;
   padding: 11px 24px;
+
+  border-radius: 22px;
 }
 
 .overlay {
@@ -1165,9 +1214,19 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation .cart-link-red {
-    color: #323232;
+  position: relative;
 
-    background-color: #f7f6f3;
+  padding: 8px 16px 8px 44px;
+
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+
+.cart-link-red svg {
+  position: absolute;
+  top: 6px;
+  left: 16px;
 }
 
 .breadcrumps-contacts-wrapper {
@@ -1182,7 +1241,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: 25px;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 
   list-style: none;
 }
@@ -1212,7 +1271,7 @@ input[type="radio"].visually-hidden {
 
 .page-title {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 25px;
   padding: 0;
 
   font-size: 35px;
@@ -1221,7 +1280,7 @@ input[type="radio"].visually-hidden {
   }
 
 .filters {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .filters legend {
@@ -1241,7 +1300,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-line-first {
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
 .filter-sorting {
@@ -1321,8 +1380,8 @@ input[type="radio"].visually-hidden {
 
 .price-controls::after {
   content: "";
-  top: 8px;
-  right: 60px;
+  top: 6px;
+  right: 62px;
 
   position: absolute;
 
@@ -1472,7 +1531,7 @@ input[type="radio"].visually-hidden {
 }
 
 .fillers-list-wrapper {
-  width: 670px;
+  width: 668px;
   padding:8px 19px 8px 16px;
 
   background-color: rgba(255, 255, 255, 0.2);
@@ -1568,7 +1627,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-form-button:active {
-  padding: 10px 29px 10px 31px;
+  padding: 8px 26px;
 
   background-color: #ededed;
   border: none;
@@ -1583,10 +1642,13 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 104px;
   padding: 0;
 
   list-style: none;
+}
+
+.inner-page .catalog-list {
+  margin-bottom: 41px;
 }
 
 .catalog-item {
@@ -1598,7 +1660,7 @@ input[type="radio"].visually-hidden {
   width: 267px;
   margin: 0;
   margin-right: 26px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .catalog-list li:nth-child(4n) {
@@ -1622,23 +1684,25 @@ input[type="radio"].visually-hidden {
 
   width: 267px;
   height: 267px;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 
   border-radius: 50%;
 }
 
-.catalog-item h3 {
-  display: inline;
+.catalog-item-title {
   margin: 0;
+  padding: 0 6px;
 
   font: inherit;
+}
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+.catalog-item-title span {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .catalog-item-price {
   position: absolute;
-  bottom: 67px;
+  bottom: 65px;
   z-index: 2;
 
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
@@ -1710,20 +1774,21 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-end;
   margin: 0;
-  margin-bottom: 30px;
-  padding: 0 23px;
+  margin-bottom: 33px;
+  padding: 0 24px;
 
   list-style: none;
 
 }
 
 .pagination-item {
+  margin-right: 2px;
   padding: 0;
 }
 
 .pagination-item a {
   display: block;
-  padding: 5px 9px;
+  padding: 4px 9px;
 
   font-size: 16px;
   line-height: 18px;
@@ -1755,7 +1820,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 8px;
-  right: 176px;
+  right: 180px;
 
   width: 8px;
   height: 12px;
@@ -1791,12 +1856,12 @@ input[type="radio"].visually-hidden {
 
 .cart-info {
   position: absolute;
-  top: 40px;
+  top: 36px;
   right: 0;
   z-index: 1;
 
   display: none;
-  width: 541px;
+  width: 510px;
   padding: 20px 15px;
 
   font-size: 13px;
@@ -1804,6 +1869,7 @@ input[type="radio"].visually-hidden {
   color: #323232;
 
   background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
 
@@ -1821,7 +1887,11 @@ input[type="radio"].visually-hidden {
 .cart-list li {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+}
+
+.cart-list li:last-child {
+  margin-bottom: 25px;
 }
 
 .product-close {
@@ -1844,7 +1914,7 @@ border: 0;
 }
 
 .product-price {
-  margin-right: 30px;
+  margin-right: 25px;
 
   color: #999999;
 }
@@ -1860,7 +1930,7 @@ border: 0;
 }
 
 .cart-total-price {
-  margin: 17px 0;
+  margin: 15px 0;
 
   font-size: 15px;
   line-height: 18px;
