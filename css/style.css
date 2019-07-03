@@ -186,6 +186,7 @@ input[type="radio"].visually-hidden {
 
   width: 31px;
   height: 31px;
+  padding-bottom: 7px;
 }
 
 .login-link,
@@ -242,6 +243,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-link {
   position: relative;
+  padding-bottom: 7px;
 }
 
 .catalog-navigation {
@@ -331,7 +333,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: #999999;
+  color: #323232;
 
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
@@ -347,15 +349,13 @@ input[type="radio"].visually-hidden {
 .search-form input:focus {
   padding: 9px 13px;
 
-  font-weight: 700;
-  color: #323232;
-
   border: 2px solid #8fbdec;
   outline: none;
 }
 
 .login {
   position: relative;
+  padding-bottom: 7px;
 }
 
 .login-form {
@@ -387,7 +387,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: #999999;
+  color: #323232;
 
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
@@ -404,9 +404,6 @@ input[type="radio"].visually-hidden {
 
 .login-form input:focus {
   padding: 8px 14px;
-
-  font-weight: 700;
-  color: #323232;
 
   border: 2px solid #8fbdec;
   outline: none;
@@ -803,7 +800,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #999999;
+  color: #323232;
 
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
@@ -811,16 +808,13 @@ input[type="radio"].visually-hidden {
 }
 
 .subscription-form input:hover {
-  padding: 10px 13px;
+  padding: 9px 13px;
 
   border: 2px solid #c7c6c5;
 }
 
 .subscription-form input:focus {
-  padding: 10px 13px;
-
-  font-weight: 700;
-  color: #323232;
+  padding: 9px 13px;
 
   border: 2px solid #8fbdec;
   outline: none;
@@ -839,10 +833,14 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   height: 431px;
   margin: 0 -27px;
+}
 
-  background-color: #ffec97;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
+.map iframe {
+  position: absolute;
+}
+
+.map-image {
+  margin: 0;
 }
 
 .map-info {
@@ -1136,7 +1134,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #999999;
+  color: #323232;
 
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
@@ -1157,17 +1155,14 @@ input[type="radio"].visually-hidden {
 
 .feedback-form input:hover,
 .feedback-form textarea:hover {
-  padding: 10px 13px;
+  padding: 8px 13px;
 
   border: 2px solid #c7c6c5;
 }
 
 .feedback-form input:focus,
 .feedback-form textarea:focus {
-  padding: 10px 13px;
-
-  font-weight: 700;
-  color: #323232;
+  padding: 8px 13px;
 
   border: 2px solid #8fbdec;
   outline: none;
@@ -1237,11 +1232,11 @@ input[type="radio"].visually-hidden {
 .breadcrumps {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 220px;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 23px;
   padding: 0;
-  margin-bottom: 3px;
 
   list-style: none;
 }
