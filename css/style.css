@@ -1747,8 +1747,8 @@ input[type="radio"].visually-hidden {
   color: #ffbc9e;
 }
 
-.catalog-item a:hover h3,
-.catalog-item a:active h3 {
+.catalog-item a:hover span,
+.catalog-item a:active span {
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
