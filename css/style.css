@@ -542,6 +542,10 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+.slider-controls label:hover {
+  background-color: rgba(248, 247, 244, 0.4);
+}
+
 .slide {
   display: none;
 }
@@ -1643,7 +1647,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .catalog-list {
-  margin-bottom: 41px;
+  margin-bottom: 43px;
 }
 
 .catalog-item {
@@ -1768,22 +1772,20 @@ input[type="radio"].visually-hidden {
 
   display: flex;
   justify-content: flex-end;
-  margin: 0;
-  margin-bottom: 33px;
-  padding: 0 24px;
+  margin: 0 -13px 31px 0;
+  padding: 0;
 
   list-style: none;
-
 }
 
 .pagination-item {
-  margin-right: 2px;
+  margin-right: 5px;
   padding: 0;
 }
 
 .pagination-item a {
   display: block;
-  padding: 4px 9px;
+  padding: 4px 8px;
 
   font-size: 16px;
   line-height: 18px;
@@ -1810,37 +1812,9 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.pagination-list::before {
-  content: "";
-
-  position: absolute;
-  top: 8px;
-  right: 180px;
-
-  width: 8px;
-  height: 12px;
-
-  background-image: url("../img/icon-right-small.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
+.pagination-previous svg {
   transform: rotate(180deg);
   opacity: 0.2;
-}
-
-.pagination-list::after {
-  content: "";
-
-  position: absolute;
-  top: 8px;
-  right: 0px;
-
-  width: 8px;
-  height: 12px;
-
-  background-image: url("../img/icon-right-small.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 /*Стилизация всплывающего окна корзины*/
