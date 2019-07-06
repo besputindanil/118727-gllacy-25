@@ -207,8 +207,11 @@ input[type="radio"].visually-hidden {
 }
 
 .search-link:hover path,
+.search-link:focus path,
 .login-link:hover polygon,
-.login-link:hover path {
+.login-link:hover path,
+.login-link:focus polygon,
+.login-link:focus path {
   fill: #323232;
 }
 
@@ -542,7 +545,8 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.slider-controls label:hover {
+.slider-controls label:hover,
+.slider-controls label:focus {
   background-color: rgba(248, 247, 244, 0.4);
 }
 
@@ -1776,25 +1780,35 @@ input[type="radio"].visually-hidden {
   z-index: 3;
 }
 
+.catalog-pagination {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-right: -8px;
+  margin-bottom: 31px;
+}
+
 .pagination-list {
   position: relative;
 
   display: flex;
-  justify-content: flex-end;
-  margin: 0 -13px 31px 0;
+  margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.pagination-item {
-  margin-right: 5px;
+.pagination-item,
+.pagination-previous-page {
+  margin-right: 3px;
   padding: 0;
 }
 
-.pagination-item a {
+.pagination-item a,
+.pagination-previous-page a,
+.pagination-next-page a {
   display: block;
-  padding: 4px 8px;
+  padding: 4px 9px;
 
   font-size: 16px;
   line-height: 18px;
@@ -1811,17 +1825,23 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item a:focus,
+.pagination-previous-page a:hover,
+.pagination-previous-page a:focus,
+.pagination-next-page a:hover,
+.pagination-next-page a:focus {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.pagination-item a:active {
+.pagination-item a:active,
+.pagination-previous-page a:active,
+.pagination-next-page a:active {
   color: #323232;
 
   background-color: #ffffff;
 }
 
-.pagination-previous svg {
+.pagination-previous-page svg {
   transform: rotate(180deg);
   opacity: 0.2;
 }
