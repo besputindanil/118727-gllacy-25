@@ -1270,7 +1270,7 @@ input[type="radio"].visually-hidden {
 
 .page-title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding: 0;
 
   font-size: 35px;
@@ -1311,15 +1311,15 @@ input[type="radio"].visually-hidden {
 .sorting-list-wrapper {
   position: relative;
 
-  width: 163px;
-  padding: 8px 14px 8px 16px;
-
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
 }
 
 .sorting-list {
   display: block;
+  width: 192px;
+  margin: 0;
+  padding: 10px 25px 10px 16px;
 
   font-size: 16px;
   line-height: 18px;
@@ -1328,22 +1328,31 @@ input[type="radio"].visually-hidden {
 
   background: transparent;
   border: none;
+  border-radius: 18px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.sorting-list::-ms-expand {
+    display: none;
 }
 
 .sorting-icon {
   position: absolute;
   top: 14px;
   right: 14px;
-  z-index: 1;
+
+  pointer-events: none;
 }
 
-.sorting-list:hover,
-.sorting-list:focus {
+.sorting-list-wrapper:hover .sorting-list,
+.sorting-list-wrapper:focus .sorting-list {
   color: #323232;
 }
 
-.sorting-list:hover + .sorting-icon path,
-.sorting-list:focus + .sorting-icon path {
+.sorting-list-wrapper:hover .sorting-icon path,
+.sorting-list-wrapper:focus .sorting-icon path {
   fill: #323232;
 }
 
